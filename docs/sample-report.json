@@ -1,0 +1,2225 @@
+{
+  "tool": "cmdb-data-quality-toolkit",
+  "version": "1.0.0",
+  "as_of": "2026-09-30",
+  "source": "sample_cmdb_export.json",
+  "disclaimer": "Generated from synthetic data for a representative portfolio project. Not derived from any employer or client code or data.",
+  "scorecard": {
+    "total_cis": 300,
+    "overall_score": 83.2,
+    "grade": "B",
+    "kpis": {
+      "completeness": {
+        "kpi": "completeness",
+        "score": 96.0,
+        "affected_cis": 12,
+        "findings": 12
+      },
+      "correctness": {
+        "kpi": "correctness",
+        "score": 64.3,
+        "affected_cis": 107,
+        "findings": 138
+      },
+      "compliance": {
+        "kpi": "compliance",
+        "score": 89.3,
+        "affected_cis": 32,
+        "findings": 32
+      }
+    },
+    "findings_by_rule": {
+      "COMP-001": 12,
+      "COR-001": 20,
+      "COR-002": 30,
+      "COR-003": 2,
+      "COR-004": 24,
+      "COR-005": 4,
+      "COR-006": 32,
+      "COR-007": 25,
+      "COR-008": 1,
+      "CSDM-001": 1,
+      "CSDM-002": 2,
+      "CSDM-003": 2,
+      "CSDM-004": 7,
+      "CSDM-005": 15,
+      "CSDM-006": 3,
+      "CSDM-007": 2
+    },
+    "affected_cis_by_class": {
+      "cmdb_ci_business_app": {
+        "total": 12,
+        "affected": 6,
+        "family": "business_app"
+      },
+      "cmdb_ci_db_mssql_instance": {
+        "total": 22,
+        "affected": 4,
+        "family": "database"
+      },
+      "cmdb_ci_db_ora_instance": {
+        "total": 22,
+        "affected": 5,
+        "family": "database"
+      },
+      "cmdb_ci_ip_switch": {
+        "total": 28,
+        "affected": 11,
+        "family": "network"
+      },
+      "cmdb_ci_linux_server": {
+        "total": 111,
+        "affected": 59,
+        "family": "server"
+      },
+      "cmdb_ci_service_auto": {
+        "total": 24,
+        "affected": 9,
+        "family": "app_service"
+      },
+      "cmdb_ci_win_server": {
+        "total": 81,
+        "affected": 44,
+        "family": "server"
+      }
+    }
+  },
+  "duplicate_groups": [
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "0a3450fc9918ee461497d6587010f719",
+        "name": "cbk-lnx-app-057",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "2460d0d2904883c191519998f2933585",
+          "name": "CBK-LNX-APP-057",
+          "discovery_source": "Manual"
+        }
+      ],
+      "matched_on": [
+        "fqdn"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "445dcc38341c64940d366dfcc28ebd70",
+        "name": "cbk-lnx-app-061",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "d86065a2fdd5b0f8d6d744fdef69a980",
+          "name": "cbk-lnx-app-061-old",
+          "discovery_source": "SCCM"
+        }
+      ],
+      "matched_on": [
+        "mac_address",
+        "serial_number"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "1d181ee986ad8a8c6bc4123ebde13c1b",
+        "name": "cbk-lnx-app-085",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "636fa890cc21cbdbfb8fe8c4d8b48ead",
+          "name": "cbk-lnx-app-085-old",
+          "discovery_source": "SCCM"
+        }
+      ],
+      "matched_on": [
+        "mac_address",
+        "serial_number"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "504867babf7b539b0f9aea4b8acd4e10",
+        "name": "cbk-lnx-batch-012",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "002ccb257a5d7c8286c5547c051a0039",
+          "name": "cbk-lnx-batch-012",
+          "discovery_source": "ImportSet"
+        }
+      ],
+      "matched_on": [
+        "name+ip_address"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "5a8aaeca1a50aec3aabc25fa3fe12e47",
+        "name": "cbk-lnx-batch-020",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "86bb42c7d8b2f8b61c654aa2c63ce21d",
+          "name": "cbk-lnx-batch-020",
+          "discovery_source": "ImportSet"
+        }
+      ],
+      "matched_on": [
+        "name+ip_address"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "892e6161be2d740a1e9b23bc50c7c006",
+        "name": "cbk-lnx-batch-048",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "5168bbf297af5bde3c8e9d782d14e9f4",
+          "name": "CBK-LNX-BATCH-048",
+          "discovery_source": "Manual"
+        }
+      ],
+      "matched_on": [
+        "fqdn"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "951f58d05e84f058d5a804eb093923de",
+        "name": "cbk-lnx-mq-019",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "78c04ed8fdd4ff21cf03f0c80effd5bd",
+          "name": "cbk-lnx-mq-019-old",
+          "discovery_source": "SCCM"
+        }
+      ],
+      "matched_on": [
+        "mac_address",
+        "serial_number"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "d85480f0dfcaf0b719b17e80dea4ae17",
+        "name": "cbk-lnx-mq-067",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "9a0692953b8d34470e61065f171b1b80",
+          "name": "CBK-LNX-MQ-067",
+          "discovery_source": "Manual"
+        }
+      ],
+      "matched_on": [
+        "fqdn"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "12d0498d718d4d05e8e22743b65feea9",
+        "name": "cbk-lnx-mq-087",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "cf89569de550d73607806e713811b519",
+          "name": "cbk-lnx-mq-087-old",
+          "discovery_source": "SCCM"
+        }
+      ],
+      "matched_on": [
+        "mac_address",
+        "serial_number"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "c03f3538e4855aa1016b6287b00805cc",
+        "name": "cbk-lnx-web-030",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "b45c9a545fa3a53112916e60f5e72daf",
+          "name": "cbk-lnx-web-030",
+          "discovery_source": "ImportSet"
+        }
+      ],
+      "matched_on": [
+        "name+ip_address"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "782a65e048ca765192f5df7b0323d342",
+        "name": "cbk-lnx-web-050",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "ffe6299495804c2ac44fc4b85b80b8d1",
+          "name": "cbk-lnx-web-050-old",
+          "discovery_source": "SCCM"
+        }
+      ],
+      "matched_on": [
+        "mac_address",
+        "serial_number"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "83599af65d01f55f67fd64c4a334058a",
+        "name": "cbk-win-app-025",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "eb3537a02d6e0291b7893986573bfc17",
+          "name": "cbk-win-app-025",
+          "discovery_source": "ImportSet"
+        }
+      ],
+      "matched_on": [
+        "name+ip_address"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "bfbeac7aefc597382fb21e667ed17aab",
+        "name": "cbk-win-app-053",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "3f738f5019a2676f28dd2bfdf956be95",
+          "name": "cbk-win-app-053-old",
+          "discovery_source": "SCCM"
+        }
+      ],
+      "matched_on": [
+        "mac_address",
+        "serial_number"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "3e2bf9c9636f6e5c2253e70687ad8b26",
+        "name": "cbk-win-app-069",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "d0f81063889fe107443b1d0f3dbc3093",
+          "name": "cbk-win-app-069-old",
+          "discovery_source": "SCCM"
+        }
+      ],
+      "matched_on": [
+        "mac_address",
+        "serial_number"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "9c4ffb4671b701aaf836f5713ccec76c",
+        "name": "cbk-win-mq-011",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "7d8d3ddd2cf149cb4f1e1a378ac8ad93",
+          "name": "CBK-WIN-MQ-011",
+          "discovery_source": "Manual"
+        }
+      ],
+      "matched_on": [
+        "fqdn"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "ffe575f665edcfe34f2dad3f10d4de39",
+        "name": "cbk-win-mq-031",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "b4157cea07388ba49770a3dbe9fa97e2",
+          "name": "CBK-WIN-MQ-031",
+          "discovery_source": "Manual"
+        }
+      ],
+      "matched_on": [
+        "fqdn"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "fe2b34d82db0728d1e5ebe5459077299",
+        "name": "cbk-win-mq-063",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "fcedf994d631c383303014d0f2c84743",
+          "name": "CBK-WIN-MQ-063",
+          "discovery_source": "Manual"
+        }
+      ],
+      "matched_on": [
+        "fqdn"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "cac4d0eb3373730efc31a5971f119c0f",
+        "name": "cbk-win-web-030",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "962c04dd25d07461059c15740f3f0f48",
+          "name": "cbk-win-web-030",
+          "discovery_source": "ImportSet"
+        }
+      ],
+      "matched_on": [
+        "name+ip_address"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "94a53fdef10d27c89780c2152b2bb8e9",
+        "name": "cbk-win-web-034",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "382b5b86f2a32efdff138c80c398c332",
+          "name": "cbk-win-web-034-old",
+          "discovery_source": "SCCM"
+        }
+      ],
+      "matched_on": [
+        "mac_address",
+        "serial_number"
+      ]
+    },
+    {
+      "family": "server",
+      "master": {
+        "sys_id": "33baba8836c7d6fa7aa4f052bf519362",
+        "name": "cbk-win-web-050",
+        "discovery_source": "ServiceNow"
+      },
+      "duplicates": [
+        {
+          "sys_id": "ce7334f233932b6c9d37efb6eafb3e90",
+          "name": "cbk-win-web-050",
+          "discovery_source": "ImportSet"
+        }
+      ],
+      "matched_on": [
+        "name+ip_address"
+      ]
+    }
+  ],
+  "normalization_suggestions": [
+    {
+      "field": "manufacturer",
+      "current": "HP Enterprise",
+      "suggested": "HPE",
+      "count": 6
+    },
+    {
+      "field": "manufacturer",
+      "current": "VMware, Inc.",
+      "suggested": "VMware",
+      "count": 6
+    },
+    {
+      "field": "manufacturer",
+      "current": "vmware",
+      "suggested": "VMware",
+      "count": 6
+    },
+    {
+      "field": "os",
+      "current": "Windows 2022 Datacenter",
+      "suggested": "Windows Server 2022",
+      "count": 5
+    },
+    {
+      "field": "os",
+      "current": "RHEL 9",
+      "suggested": "Red Hat Enterprise Linux 9",
+      "count": 4
+    },
+    {
+      "field": "os",
+      "current": "windows server 2022",
+      "suggested": "Windows Server 2022",
+      "count": 4
+    },
+    {
+      "field": "os",
+      "current": "Red Hat 9",
+      "suggested": "Red Hat Enterprise Linux 9",
+      "count": 3
+    },
+    {
+      "field": "manufacturer",
+      "current": "CISCO",
+      "suggested": "Cisco",
+      "count": 2
+    },
+    {
+      "field": "manufacturer",
+      "current": "Dell Computer Corporation",
+      "suggested": "Dell",
+      "count": 2
+    },
+    {
+      "field": "manufacturer",
+      "current": "Dell Inc.",
+      "suggested": "Dell",
+      "count": 2
+    },
+    {
+      "field": "manufacturer",
+      "current": "Hewlett Packard Enterprise",
+      "suggested": "HPE",
+      "count": 2
+    },
+    {
+      "field": "os",
+      "current": "Win2019",
+      "suggested": "Windows Server 2019",
+      "count": 2
+    },
+    {
+      "field": "os",
+      "current": "ubuntu 22.04.3 LTS",
+      "suggested": "Ubuntu 22.04",
+      "count": 2
+    },
+    {
+      "field": "manufacturer",
+      "current": "Arista Networks",
+      "suggested": "Arista",
+      "count": 1
+    },
+    {
+      "field": "manufacturer",
+      "current": "Cisco Systems, Inc.",
+      "suggested": "Cisco",
+      "count": 1
+    },
+    {
+      "field": "manufacturer",
+      "current": "DELL",
+      "suggested": "Dell",
+      "count": 1
+    },
+    {
+      "field": "manufacturer",
+      "current": "Juniper Networks",
+      "suggested": "Juniper",
+      "count": 1
+    },
+    {
+      "field": "os",
+      "current": "Microsoft Windows Server 2019 Standard",
+      "suggested": "Windows Server 2019",
+      "count": 1
+    },
+    {
+      "field": "os",
+      "current": "RHEL 8",
+      "suggested": "Red Hat Enterprise Linux 8",
+      "count": 1
+    },
+    {
+      "field": "os",
+      "current": "Red Hat Enterprise Linux Server 8",
+      "suggested": "Red Hat Enterprise Linux 8",
+      "count": 1
+    },
+    {
+      "field": "os",
+      "current": "Ubuntu Linux 22.04",
+      "suggested": "Ubuntu 22.04",
+      "count": 1
+    }
+  ],
+  "findings": [
+    {
+      "rule_id": "COMP-001",
+      "kpi": "completeness",
+      "severity": "medium",
+      "sys_id": "2460d0d2904883c191519998f2933585",
+      "name": "CBK-LNX-APP-057",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Missing: serial_number, ip_address"
+    },
+    {
+      "rule_id": "COMP-001",
+      "kpi": "completeness",
+      "severity": "medium",
+      "sys_id": "5168bbf297af5bde3c8e9d782d14e9f4",
+      "name": "CBK-LNX-BATCH-048",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Missing: serial_number, ip_address"
+    },
+    {
+      "rule_id": "COMP-001",
+      "kpi": "completeness",
+      "severity": "medium",
+      "sys_id": "9a0692953b8d34470e61065f171b1b80",
+      "name": "CBK-LNX-MQ-067",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Missing: serial_number, ip_address"
+    },
+    {
+      "rule_id": "COMP-001",
+      "kpi": "completeness",
+      "severity": "medium",
+      "sys_id": "7d8d3ddd2cf149cb4f1e1a378ac8ad93",
+      "name": "CBK-WIN-MQ-011",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Missing: serial_number, ip_address"
+    },
+    {
+      "rule_id": "COMP-001",
+      "kpi": "completeness",
+      "severity": "medium",
+      "sys_id": "b4157cea07388ba49770a3dbe9fa97e2",
+      "name": "CBK-WIN-MQ-031",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Missing: serial_number, ip_address"
+    },
+    {
+      "rule_id": "COMP-001",
+      "kpi": "completeness",
+      "severity": "medium",
+      "sys_id": "fcedf994d631c383303014d0f2c84743",
+      "name": "CBK-WIN-MQ-063",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Missing: serial_number, ip_address"
+    },
+    {
+      "rule_id": "COMP-001",
+      "kpi": "completeness",
+      "severity": "medium",
+      "sys_id": "002ccb257a5d7c8286c5547c051a0039",
+      "name": "cbk-lnx-batch-012",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Missing: serial_number"
+    },
+    {
+      "rule_id": "COMP-001",
+      "kpi": "completeness",
+      "severity": "medium",
+      "sys_id": "86bb42c7d8b2f8b61c654aa2c63ce21d",
+      "name": "cbk-lnx-batch-020",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Missing: serial_number"
+    },
+    {
+      "rule_id": "COMP-001",
+      "kpi": "completeness",
+      "severity": "medium",
+      "sys_id": "b45c9a545fa3a53112916e60f5e72daf",
+      "name": "cbk-lnx-web-030",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Missing: serial_number"
+    },
+    {
+      "rule_id": "COMP-001",
+      "kpi": "completeness",
+      "severity": "medium",
+      "sys_id": "eb3537a02d6e0291b7893986573bfc17",
+      "name": "cbk-win-app-025",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Missing: serial_number"
+    },
+    {
+      "rule_id": "COMP-001",
+      "kpi": "completeness",
+      "severity": "medium",
+      "sys_id": "962c04dd25d07461059c15740f3f0f48",
+      "name": "cbk-win-web-030",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Missing: serial_number"
+    },
+    {
+      "rule_id": "COMP-001",
+      "kpi": "completeness",
+      "severity": "medium",
+      "sys_id": "ce7334f233932b6c9d37efb6eafb3e90",
+      "name": "cbk-win-web-050",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Missing: serial_number"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "2460d0d2904883c191519998f2933585",
+      "name": "CBK-LNX-APP-057",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Duplicate of cbk-lnx-app-057 (0a3450fc9918ee461497d6587010f719) matched on fqdn"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "5168bbf297af5bde3c8e9d782d14e9f4",
+      "name": "CBK-LNX-BATCH-048",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Duplicate of cbk-lnx-batch-048 (892e6161be2d740a1e9b23bc50c7c006) matched on fqdn"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "9a0692953b8d34470e61065f171b1b80",
+      "name": "CBK-LNX-MQ-067",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Duplicate of cbk-lnx-mq-067 (d85480f0dfcaf0b719b17e80dea4ae17) matched on fqdn"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "7d8d3ddd2cf149cb4f1e1a378ac8ad93",
+      "name": "CBK-WIN-MQ-011",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Duplicate of cbk-win-mq-011 (9c4ffb4671b701aaf836f5713ccec76c) matched on fqdn"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "b4157cea07388ba49770a3dbe9fa97e2",
+      "name": "CBK-WIN-MQ-031",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Duplicate of cbk-win-mq-031 (ffe575f665edcfe34f2dad3f10d4de39) matched on fqdn"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "fcedf994d631c383303014d0f2c84743",
+      "name": "CBK-WIN-MQ-063",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Duplicate of cbk-win-mq-063 (fe2b34d82db0728d1e5ebe5459077299) matched on fqdn"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "d86065a2fdd5b0f8d6d744fdef69a980",
+      "name": "cbk-lnx-app-061-old",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Duplicate of cbk-lnx-app-061 (445dcc38341c64940d366dfcc28ebd70) matched on mac_address, serial_number"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "636fa890cc21cbdbfb8fe8c4d8b48ead",
+      "name": "cbk-lnx-app-085-old",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Duplicate of cbk-lnx-app-085 (1d181ee986ad8a8c6bc4123ebde13c1b) matched on mac_address, serial_number"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "002ccb257a5d7c8286c5547c051a0039",
+      "name": "cbk-lnx-batch-012",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Duplicate of cbk-lnx-batch-012 (504867babf7b539b0f9aea4b8acd4e10) matched on name+ip_address"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "86bb42c7d8b2f8b61c654aa2c63ce21d",
+      "name": "cbk-lnx-batch-020",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Duplicate of cbk-lnx-batch-020 (5a8aaeca1a50aec3aabc25fa3fe12e47) matched on name+ip_address"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "78c04ed8fdd4ff21cf03f0c80effd5bd",
+      "name": "cbk-lnx-mq-019-old",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Duplicate of cbk-lnx-mq-019 (951f58d05e84f058d5a804eb093923de) matched on mac_address, serial_number"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "cf89569de550d73607806e713811b519",
+      "name": "cbk-lnx-mq-087-old",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Duplicate of cbk-lnx-mq-087 (12d0498d718d4d05e8e22743b65feea9) matched on mac_address, serial_number"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "b45c9a545fa3a53112916e60f5e72daf",
+      "name": "cbk-lnx-web-030",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Duplicate of cbk-lnx-web-030 (c03f3538e4855aa1016b6287b00805cc) matched on name+ip_address"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "ffe6299495804c2ac44fc4b85b80b8d1",
+      "name": "cbk-lnx-web-050-old",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Duplicate of cbk-lnx-web-050 (782a65e048ca765192f5df7b0323d342) matched on mac_address, serial_number"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "eb3537a02d6e0291b7893986573bfc17",
+      "name": "cbk-win-app-025",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Duplicate of cbk-win-app-025 (83599af65d01f55f67fd64c4a334058a) matched on name+ip_address"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "3f738f5019a2676f28dd2bfdf956be95",
+      "name": "cbk-win-app-053-old",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Duplicate of cbk-win-app-053 (bfbeac7aefc597382fb21e667ed17aab) matched on mac_address, serial_number"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "d0f81063889fe107443b1d0f3dbc3093",
+      "name": "cbk-win-app-069-old",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Duplicate of cbk-win-app-069 (3e2bf9c9636f6e5c2253e70687ad8b26) matched on mac_address, serial_number"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "962c04dd25d07461059c15740f3f0f48",
+      "name": "cbk-win-web-030",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Duplicate of cbk-win-web-030 (cac4d0eb3373730efc31a5971f119c0f) matched on name+ip_address"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "382b5b86f2a32efdff138c80c398c332",
+      "name": "cbk-win-web-034-old",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Duplicate of cbk-win-web-034 (94a53fdef10d27c89780c2152b2bb8e9) matched on mac_address, serial_number"
+    },
+    {
+      "rule_id": "COR-001",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "ce7334f233932b6c9d37efb6eafb3e90",
+      "name": "cbk-win-web-050",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Duplicate of cbk-win-web-050 (33baba8836c7d6fa7aa4f052bf519362) matched on name+ip_address"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "35ebd32d9ad620ab48212ddb45b89cd9",
+      "name": "cbk-lnx-app-017",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'vmware' should be 'VMware'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "bcae8081bdf070aaf0b5156bb82c9074",
+      "name": "cbk-lnx-app-025",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'VMware, Inc.' should be 'VMware'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "42999aa40cdf742b2e85cb217631de9d",
+      "name": "cbk-lnx-app-037",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'Hewlett Packard Enterprise' should be 'HPE'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "89e06ab37250ee18260a5962dd81b7f5",
+      "name": "cbk-lnx-app-065",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'VMware, Inc.' should be 'VMware'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "bb5e4bcf15ed626914296c07f26b4776",
+      "name": "cbk-lnx-batch-004",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'Dell Computer Corporation' should be 'Dell'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "f5b78cc7e6b3c944cb323e357922bac2",
+      "name": "cbk-lnx-batch-028",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'vmware' should be 'VMware'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "b963f37f67814c1fcc530e36addc3e13",
+      "name": "cbk-lnx-batch-036",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'HP Enterprise' should be 'HPE'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "29ec8e49d1bdb8c0c71d5e601d5206ab",
+      "name": "cbk-lnx-batch-040",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'VMware, Inc.' should be 'VMware'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "45c45a3ee9da484a80759f1f87e5f0fe",
+      "name": "cbk-lnx-batch-076",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'Dell Computer Corporation' should be 'Dell'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "652ffb493873e57f0ba078e84ef492c1",
+      "name": "cbk-lnx-batch-096",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'HP Enterprise' should be 'HPE'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "c8fe3ccdc8b8d9c6ed3049cf43e458fc",
+      "name": "cbk-lnx-mq-011",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'HP Enterprise' should be 'HPE'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "fb2ca025adf4e62d6651529e8268690b",
+      "name": "cbk-lnx-mq-023",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'HP Enterprise' should be 'HPE'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "001a9a8bd56f03508c459ce267f48ad5",
+      "name": "cbk-lnx-mq-027",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'vmware' should be 'VMware'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "fce6850487f8424daae65fc176f2dbfe",
+      "name": "cbk-lnx-mq-031",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'HP Enterprise' should be 'HPE'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "8dcdcd03969b666205628059568cc69b",
+      "name": "cbk-lnx-web-006",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'DELL' should be 'Dell'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "21813d25655238a643ff50113d1a85dd",
+      "name": "cbk-lnx-web-014",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'VMware, Inc.' should be 'VMware'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "5563f61600e85ece0b49452d46d483f3",
+      "name": "cbk-lnx-web-018",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'vmware' should be 'VMware'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "bfc00dc804f64d867866076514f7ce8d",
+      "name": "cbk-lnx-web-038",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'HP Enterprise' should be 'HPE'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "84dad06a7872bdeb2cd94cbbc19ad58c",
+      "name": "cbk-lnx-web-058",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'VMware, Inc.' should be 'VMware'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "82bbad8438d5101f423cad9d193e4783",
+      "name": "cbk-net-sw-010",
+      "sys_class_name": "cmdb_ci_ip_switch",
+      "message": "'CISCO' should be 'Cisco'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "2fb70dab2f383b43a137f8e467b13040",
+      "name": "cbk-net-sw-014",
+      "sys_class_name": "cmdb_ci_ip_switch",
+      "message": "'CISCO' should be 'Cisco'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "ee4205eea52fc3eceb4e2281b184d1fc",
+      "name": "cbk-net-sw-019",
+      "sys_class_name": "cmdb_ci_ip_switch",
+      "message": "'Arista Networks' should be 'Arista'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "dd83ad037066e289164484a0d1151fff",
+      "name": "cbk-net-sw-024",
+      "sys_class_name": "cmdb_ci_ip_switch",
+      "message": "'Juniper Networks' should be 'Juniper'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "3f5fbf4fd41762305274ee11b61df906",
+      "name": "cbk-net-sw-027",
+      "sys_class_name": "cmdb_ci_ip_switch",
+      "message": "'Cisco Systems, Inc.' should be 'Cisco'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "f6e39356a8149562da003f16b9469bcf",
+      "name": "cbk-win-mq-007",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "'vmware' should be 'VMware'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "d6d441cc195d82f8ee4a9b5d519554e3",
+      "name": "cbk-win-mq-015",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "'Dell Inc.' should be 'Dell'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "f5e4a4713fe68c9c4758367ba6499cdc",
+      "name": "cbk-win-mq-027",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "'Dell Inc.' should be 'Dell'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "9e3c5a886aa56e6d92779574c4576cc3",
+      "name": "cbk-win-mq-035",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "'vmware' should be 'VMware'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "bf337a151e086f20bdd151b0f64ab6ec",
+      "name": "cbk-win-mq-071",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "'Hewlett Packard Enterprise' should be 'HPE'"
+    },
+    {
+      "rule_id": "COR-002",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "9a5919749adf4709ac75c344608e149e",
+      "name": "cbk-win-web-070",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "'VMware, Inc.' should be 'VMware'"
+    },
+    {
+      "rule_id": "COR-003",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "039f3a254d6168bd2defe1935c62b3a2",
+      "name": "cbk-lnx-app-049",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "'Generic OEM' has no normalization entry"
+    },
+    {
+      "rule_id": "COR-003",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "3bf2025f4a0d2b73fe54ee4b80ff5173",
+      "name": "cbk-win-web-066",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "'Generic OEM' has no normalization entry"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "1eb0e38a675dd5af3c365296dca02eec",
+      "name": "cbk-lnx-app-013",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "OS 'RHEL 8' should be 'Red Hat Enterprise Linux 8'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "bcae8081bdf070aaf0b5156bb82c9074",
+      "name": "cbk-lnx-app-025",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "OS 'RHEL 9' should be 'Red Hat Enterprise Linux 9'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "b27b3d901a16342c3e2b6091a092f52a",
+      "name": "cbk-lnx-app-041",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "OS 'RHEL 9' should be 'Red Hat Enterprise Linux 9'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "f295456e19675f06bd767e35f5c9b047",
+      "name": "cbk-lnx-app-053",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "OS 'ubuntu 22.04.3 LTS' should be 'Ubuntu 22.04'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "89e06ab37250ee18260a5962dd81b7f5",
+      "name": "cbk-lnx-app-065",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "OS 'RHEL 9' should be 'Red Hat Enterprise Linux 9'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "11df12d7dd30de8922f235f2e11b868d",
+      "name": "cbk-lnx-batch-064",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "OS 'Red Hat 9' should be 'Red Hat Enterprise Linux 9'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "001a9a8bd56f03508c459ce267f48ad5",
+      "name": "cbk-lnx-mq-027",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "OS 'Red Hat 9' should be 'Red Hat Enterprise Linux 9'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "793b4c32205004943d1148022702878b",
+      "name": "cbk-lnx-mq-039",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "OS 'ubuntu 22.04.3 LTS' should be 'Ubuntu 22.04'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "c64ee6e389c5b31aeb6c1016cee624d0",
+      "name": "cbk-lnx-mq-043",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "OS 'Red Hat Enterprise Linux Server 8' should be 'Red Hat Enterprise Linux 8'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "96fc734da003cd28ca8f3653c9af18f8",
+      "name": "cbk-lnx-mq-055",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "OS 'Red Hat 9' should be 'Red Hat Enterprise Linux 9'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "21813d25655238a643ff50113d1a85dd",
+      "name": "cbk-lnx-web-014",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "OS 'Ubuntu Linux 22.04' should be 'Ubuntu 22.04'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "7d7ddbedd284476c6b88f83dd97dc9cd",
+      "name": "cbk-lnx-web-042",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "OS 'RHEL 9' should be 'Red Hat Enterprise Linux 9'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "7c7c404ec422d03ef29a6339577bc55a",
+      "name": "cbk-win-app-009",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "OS 'Windows 2022 Datacenter' should be 'Windows Server 2022'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "83f02dc74f612217eef1669450cae32d",
+      "name": "cbk-win-app-021",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "OS 'Win2019' should be 'Windows Server 2019'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "fc902838d8741408f7b217c7ae92ea71",
+      "name": "cbk-win-app-029",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "OS 'windows server 2022' should be 'Windows Server 2022'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "daf481a7fa34d2e8dd3f7d7ea508dc95",
+      "name": "cbk-win-batch-004",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "OS 'Windows 2022 Datacenter' should be 'Windows Server 2022'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "6a662fce7089fc6d2877f5d90f5675f8",
+      "name": "cbk-win-batch-036",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "OS 'windows server 2022' should be 'Windows Server 2022'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "fb756923f910abb3f10532523990e2c9",
+      "name": "cbk-win-batch-048",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "OS 'windows server 2022' should be 'Windows Server 2022'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "f5e4a4713fe68c9c4758367ba6499cdc",
+      "name": "cbk-win-mq-027",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "OS 'Windows 2022 Datacenter' should be 'Windows Server 2022'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "8c32bdb2d42a895e0fcf601f1cb9b73a",
+      "name": "cbk-win-mq-059",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "OS 'windows server 2022' should be 'Windows Server 2022'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "218c6e1c9e374f7ac42cbc39e05b46c5",
+      "name": "cbk-win-web-010",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "OS 'Win2019' should be 'Windows Server 2019'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "597e6845e27718c5737d1fb6d11376e0",
+      "name": "cbk-win-web-014",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "OS 'Windows 2022 Datacenter' should be 'Windows Server 2022'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "6aa42c9f921704753d959e3f5a5226e6",
+      "name": "cbk-win-web-018",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "OS 'Windows 2022 Datacenter' should be 'Windows Server 2022'"
+    },
+    {
+      "rule_id": "COR-004",
+      "kpi": "correctness",
+      "severity": "low",
+      "sys_id": "26c432f66b352f85504e268770e7e756",
+      "name": "cbk-win-web-046",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "OS 'Microsoft Windows Server 2019 Standard' should be 'Windows Server 2019'"
+    },
+    {
+      "rule_id": "COR-005",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "fadd7ea3aca5e2fdb966442aad238d36",
+      "name": "cbk-lnx-app-077",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Serial number 'To be filled by O.E.M.' is a placeholder"
+    },
+    {
+      "rule_id": "COR-005",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "c5c5b37af85e06a11dad09b252c21221",
+      "name": "cbk-lnx-batch-060",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Serial number 'To be filled by O.E.M.' is a placeholder"
+    },
+    {
+      "rule_id": "COR-005",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "a65bb1f265c17795b15516bc9f8ded97",
+      "name": "cbk-lnx-batch-068",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Serial number 'To be filled by O.E.M.' is a placeholder"
+    },
+    {
+      "rule_id": "COR-005",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "22bae10e899ca782e3236d1a3c1bdacc",
+      "name": "cbk-lnx-batch-080",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Serial number 'To be filled by O.E.M.' is a placeholder"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "2460d0d2904883c191519998f2933585",
+      "name": "CBK-LNX-APP-057",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "5168bbf297af5bde3c8e9d782d14e9f4",
+      "name": "CBK-LNX-BATCH-048",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "9a0692953b8d34470e61065f171b1b80",
+      "name": "CBK-LNX-MQ-067",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "7d8d3ddd2cf149cb4f1e1a378ac8ad93",
+      "name": "CBK-WIN-MQ-011",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "b4157cea07388ba49770a3dbe9fa97e2",
+      "name": "CBK-WIN-MQ-031",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "fcedf994d631c383303014d0f2c84743",
+      "name": "CBK-WIN-MQ-063",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "bd5a0c9e277eb0aaa247541dc8ad0899",
+      "name": "CBKORA41",
+      "sys_class_name": "cmdb_ci_db_ora_instance",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "fbe33b243eae00320bd4a9900640be0f",
+      "name": "cbk-lnx-app-029",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "d86065a2fdd5b0f8d6d744fdef69a980",
+      "name": "cbk-lnx-app-061-old",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "636fa890cc21cbdbfb8fe8c4d8b48ead",
+      "name": "cbk-lnx-app-085-old",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "778eedb3693dffbc6c6fa6115ab33edf",
+      "name": "cbk-lnx-batch-008",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "002ccb257a5d7c8286c5547c051a0039",
+      "name": "cbk-lnx-batch-012",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "86bb42c7d8b2f8b61c654aa2c63ce21d",
+      "name": "cbk-lnx-batch-020",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "29ec8e49d1bdb8c0c71d5e601d5206ab",
+      "name": "cbk-lnx-batch-040",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "78c04ed8fdd4ff21cf03f0c80effd5bd",
+      "name": "cbk-lnx-mq-019-old",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "45ff2c83b495db4e82456fb44ab7706e",
+      "name": "cbk-lnx-mq-063",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "cf89569de550d73607806e713811b519",
+      "name": "cbk-lnx-mq-087-old",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "b45c9a545fa3a53112916e60f5e72daf",
+      "name": "cbk-lnx-web-030",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "72bb912d7da67785b63b4dc3a559e463",
+      "name": "cbk-lnx-web-046",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "ffe6299495804c2ac44fc4b85b80b8d1",
+      "name": "cbk-lnx-web-050-old",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "d918b3e5f2f25eef1f45dbfdf7dc67e0",
+      "name": "cbk-lnx-web-082",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "eb3537a02d6e0291b7893986573bfc17",
+      "name": "cbk-win-app-025",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "3f738f5019a2676f28dd2bfdf956be95",
+      "name": "cbk-win-app-053-old",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "d0f81063889fe107443b1d0f3dbc3093",
+      "name": "cbk-win-app-069-old",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "04dd7054144823f7e7e646c701582463",
+      "name": "cbk-win-batch-016",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "3c4b1eec6231ee7342c2d2eb01bf9e73",
+      "name": "cbk-win-batch-056",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "c9dc72b85b6a810204287378bf5023f4",
+      "name": "cbk-win-mq-019",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "e4a4474c9b33e3a42620f9a974fd33d1",
+      "name": "cbk-win-mq-043",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "e3b563606fdc0bad5e368127cca1b45c",
+      "name": "cbk-win-web-022",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "962c04dd25d07461059c15740f3f0f48",
+      "name": "cbk-win-web-030",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "382b5b86f2a32efdff138c80c398c332",
+      "name": "cbk-win-web-034-old",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-006",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "ce7334f233932b6c9d37efb6eafb3e90",
+      "name": "cbk-win-web-050",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "CI has no upstream or downstream relationships"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "379efc6e5edb0d3cb0b63bcf08601833",
+      "name": "cbk-lnx-app-081",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Last discovered 207 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "6d4067f450032b3518578bafbac7e2b9",
+      "name": "cbk-lnx-app-089",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Last discovered 148 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "6e3f683abf3c51407f54a51101fa964e",
+      "name": "cbk-lnx-app-097",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Last discovered 276 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "f5b78cc7e6b3c944cb323e357922bac2",
+      "name": "cbk-lnx-batch-028",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Last discovered 106 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "b963f37f67814c1fcc530e36addc3e13",
+      "name": "cbk-lnx-batch-036",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Last discovered 164 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "a93b12cd1c24220e2cabd7e7cc6b66e5",
+      "name": "cbk-lnx-batch-084",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Last discovered 184 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "6e218b099afd4015816bcb9f7426b193",
+      "name": "cbk-lnx-batch-088",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Last discovered 275 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "652ffb493873e57f0ba078e84ef492c1",
+      "name": "cbk-lnx-batch-096",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Last discovered 129 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "db9465701ac70ec0ab8ddeb45230dfbd",
+      "name": "cbk-lnx-mq-059",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Last discovered 283 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "350843f08de08fc2c3e15a85d46ef104",
+      "name": "cbk-lnx-mq-083",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Never discovered (last_discovered empty)"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "81e5c9f693f277cc1a85910d5a057c11",
+      "name": "cbk-lnx-mq-091",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Last discovered 151 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "688c7015aab97e494f2d479681d2c7de",
+      "name": "cbk-lnx-web-026",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Last discovered 344 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "03802b708d03c91e4f8d5238288b78b5",
+      "name": "cbk-lnx-web-062",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Last discovered 99 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "530ac1c7b8ba83684fc777685ebbcca5",
+      "name": "cbk-lnx-web-094",
+      "sys_class_name": "cmdb_ci_linux_server",
+      "message": "Last discovered 228 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "f0df1684f28e41225894f7f139b86bb2",
+      "name": "cbk-win-app-033",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Last discovered 124 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "4f40c22f15b02530f020e992b576255e",
+      "name": "cbk-win-batch-008",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Last discovered 114 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "ffa623d0ea9e5c8db1a8b71f491b90e9",
+      "name": "cbk-win-batch-028",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Last discovered 83 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "75eb89c23f5cf2f33acb43a3d2c7bffb",
+      "name": "cbk-win-batch-064",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Last discovered 212 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "9a3a61036e3c453214348f626cac028c",
+      "name": "cbk-win-mq-023",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Last discovered 205 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "9e3c5a886aa56e6d92779574c4576cc3",
+      "name": "cbk-win-mq-035",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Last discovered 319 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "548e1f6b69ce1e4e19a692c90d700ea4",
+      "name": "cbk-win-mq-051",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Last discovered 253 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "68a51c68632dbb5e486bb6bfeafde7d9",
+      "name": "cbk-win-web-006",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Last discovered 246 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "315c167a45d8a6ad77d0359e811414f8",
+      "name": "cbk-win-web-054",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Last discovered 100 days ago"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "fa740cc8a43afb7ac40d487422ab7752",
+      "name": "cbk-win-web-062",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Never discovered (last_discovered empty)"
+    },
+    {
+      "rule_id": "COR-007",
+      "kpi": "correctness",
+      "severity": "medium",
+      "sys_id": "3bf2025f4a0d2b73fe54ee4b80ff5173",
+      "name": "cbk-win-web-066",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Never discovered (last_discovered empty)"
+    },
+    {
+      "rule_id": "COR-008",
+      "kpi": "correctness",
+      "severity": "high",
+      "sys_id": "dc98d2c1e2acf72f9e574f7aa0ee89ae",
+      "name": "Retail Payments Hub - PROD",
+      "sys_class_name": "cmdb_ci_service_auto",
+      "message": "Relationship 'Depends on::Used by' points to missing CI ffffffffffffffffffffffffffffffff"
+    },
+    {
+      "rule_id": "CSDM-001",
+      "kpi": "compliance",
+      "severity": "high",
+      "sys_id": "d453dd324b0dbb418d5288f1142c3fe8",
+      "name": "Statement Archive",
+      "sys_class_name": "cmdb_ci_business_app",
+      "message": "No 'Consumes' link to an application service"
+    },
+    {
+      "rule_id": "CSDM-002",
+      "kpi": "compliance",
+      "severity": "high",
+      "sys_id": "663f1c97956269f0e5d7b8756dadd6c7",
+      "name": "Batch Scheduler - PROD",
+      "sys_class_name": "cmdb_ci_service_auto",
+      "message": "No parent business application"
+    },
+    {
+      "rule_id": "CSDM-002",
+      "kpi": "compliance",
+      "severity": "high",
+      "sys_id": "95a76d79bf3c4c06434308bc89fa6a68",
+      "name": "Shared File Transfer - PROD",
+      "sys_class_name": "cmdb_ci_service_auto",
+      "message": "No parent business application"
+    },
+    {
+      "rule_id": "CSDM-003",
+      "kpi": "compliance",
+      "severity": "high",
+      "sys_id": "43cf2fde24933b83757750a9a491f0b2",
+      "name": "General Ledger - PROD",
+      "sys_class_name": "cmdb_ci_service_auto",
+      "message": "No infrastructure CIs mapped"
+    },
+    {
+      "rule_id": "CSDM-003",
+      "kpi": "compliance",
+      "severity": "high",
+      "sys_id": "8fb5d27bbeb799193f22faf823bed01d",
+      "name": "General Ledger - UAT",
+      "sys_class_name": "cmdb_ci_service_auto",
+      "message": "No infrastructure CIs mapped"
+    },
+    {
+      "rule_id": "CSDM-004",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "a2bc372f7412b29347294739614ff3d7",
+      "name": "Card Disputes - UAT",
+      "sys_class_name": "cmdb_ci_service_auto",
+      "message": "owned_by is empty"
+    },
+    {
+      "rule_id": "CSDM-004",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "2bcfbe01a28defe39bf0027312476f57",
+      "name": "Claims Intake - UAT",
+      "sys_class_name": "cmdb_ci_service_auto",
+      "message": "owned_by is empty"
+    },
+    {
+      "rule_id": "CSDM-004",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "ea1fca65e27a984d654821d07fcd9eb1",
+      "name": "Fraud Analytics - UAT",
+      "sys_class_name": "cmdb_ci_service_auto",
+      "message": "owned_by is empty"
+    },
+    {
+      "rule_id": "CSDM-004",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "1ff49b7889463e85759cde66bacfb3d0",
+      "name": "General Ledger",
+      "sys_class_name": "cmdb_ci_business_app",
+      "message": "owned_by is empty"
+    },
+    {
+      "rule_id": "CSDM-004",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "9a1de644815ef6d13b8faa1837f8a88b",
+      "name": "Treasury Liquidity",
+      "sys_class_name": "cmdb_ci_business_app",
+      "message": "owned_by is empty"
+    },
+    {
+      "rule_id": "CSDM-004",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "371ecd7b27cd813047229389571aa876",
+      "name": "Wire Transfer Gateway",
+      "sys_class_name": "cmdb_ci_business_app",
+      "message": "owned_by is empty"
+    },
+    {
+      "rule_id": "CSDM-004",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "3aa2e4f90e51f30dc6a7ee39c4b032cc",
+      "name": "Wire Transfer Gateway - PROD",
+      "sys_class_name": "cmdb_ci_service_auto",
+      "message": "owned_by is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "dd34aa1890019ed40bb401e769f753f1",
+      "name": "CBKORA03",
+      "sys_class_name": "cmdb_ci_db_ora_instance",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "d3fbe043af1d5a1a4ccb235539d1c7ff",
+      "name": "CBKORA21",
+      "sys_class_name": "cmdb_ci_db_ora_instance",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "c8cce2c2a518a4186f14b3f6d867888b",
+      "name": "CBKORA25",
+      "sys_class_name": "cmdb_ci_db_ora_instance",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "cc4d58194b9dfd589e5d9c7ac5acc354",
+      "name": "CBKORA39",
+      "sys_class_name": "cmdb_ci_db_ora_instance",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "340029c3ea11905b51facefad6f89f7a",
+      "name": "CBKSQL02",
+      "sys_class_name": "cmdb_ci_db_mssql_instance",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "37fe032c0257185126a9e100b509109b",
+      "name": "CBKSQL12",
+      "sys_class_name": "cmdb_ci_db_mssql_instance",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "9ea9f508312275923db02235261e2555",
+      "name": "CBKSQL18",
+      "sys_class_name": "cmdb_ci_db_mssql_instance",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "01547950176de21f1b46ebdc5c56d9bc",
+      "name": "CBKSQL42",
+      "sys_class_name": "cmdb_ci_db_mssql_instance",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "0328c136629ef3d8dd1ca267530ddda6",
+      "name": "cbk-net-sw-001",
+      "sys_class_name": "cmdb_ci_ip_switch",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "7e3d5ee444b64ec14d16f04944d7df9a",
+      "name": "cbk-net-sw-002",
+      "sys_class_name": "cmdb_ci_ip_switch",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "2d79a2d1506e50c77aa061e9336b00cb",
+      "name": "cbk-net-sw-005",
+      "sys_class_name": "cmdb_ci_ip_switch",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "82c56b21243012dab1850eb85f90fc87",
+      "name": "cbk-net-sw-018",
+      "sys_class_name": "cmdb_ci_ip_switch",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "ee4205eea52fc3eceb4e2281b184d1fc",
+      "name": "cbk-net-sw-019",
+      "sys_class_name": "cmdb_ci_ip_switch",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "71a0449dd703262fb5cbe3f56a66c184",
+      "name": "cbk-net-sw-021",
+      "sys_class_name": "cmdb_ci_ip_switch",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-005",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "fc48f61583b0b35cdba6fdf8f3d04ffb",
+      "name": "cbk-net-sw-026",
+      "sys_class_name": "cmdb_ci_ip_switch",
+      "message": "support_group is empty"
+    },
+    {
+      "rule_id": "CSDM-006",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "6133a34d8b0e8eb1ad371d9e92cf6021",
+      "name": "cbk-win-app-049",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Retired but related to 1 active CI(s): Fraud Analytics - PROD"
+    },
+    {
+      "rule_id": "CSDM-006",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "28e333b64e8adc4b772420411e43fbd2",
+      "name": "cbk-win-app-057",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Retired but related to 1 active CI(s): Retail Payments Hub - PROD"
+    },
+    {
+      "rule_id": "CSDM-006",
+      "kpi": "compliance",
+      "severity": "medium",
+      "sys_id": "5fa5e0aa9b11b530fd247c11bf6b8cdf",
+      "name": "cbk-win-web-058",
+      "sys_class_name": "cmdb_ci_win_server",
+      "message": "Retired but related to 1 active CI(s): Treasury Liquidity - PROD"
+    },
+    {
+      "rule_id": "CSDM-007",
+      "kpi": "compliance",
+      "severity": "low",
+      "sys_id": "ad3c2d6d1a3d1fa7bc8960a923b8c1e9",
+      "name": "Mortgage Origination",
+      "sys_class_name": "cmdb_ci_business_app",
+      "message": "'Depends on::Used by' from business_app to server (cbk-lnx-batch-032) is not an allowed CSDM pattern"
+    },
+    {
+      "rule_id": "CSDM-007",
+      "kpi": "compliance",
+      "severity": "low",
+      "sys_id": "3eb13b9046685257bdd640fb06671ad1",
+      "name": "Retail Payments Hub",
+      "sys_class_name": "cmdb_ci_business_app",
+      "message": "'Depends on::Used by' from business_app to server (cbk-win-web-026) is not an allowed CSDM pattern"
+    }
+  ]
+}
