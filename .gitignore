@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Generated reports and private data (sample outputs live in docs/)
+reports/
+data/private/
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store

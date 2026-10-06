@@ -1,0 +1,26 @@
+[project]
+name = "cmdb-data-quality-toolkit"
+version = "1.0.0"
+description = "CMDB data quality scorecard: IRE-style duplicate detection, normalization and CSDM conformance checks on synthetic data."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Abdul Raheem Mohammed" }]
+dependencies = []
+
+[project.scripts]
+cmdb-dq = "cmdb_dq.cli:main"
+
+[tool.setuptools]
+packages = ["cmdb_dq"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
